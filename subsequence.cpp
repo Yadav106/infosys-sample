@@ -18,13 +18,11 @@ int findLength(int n, vector<int> nums) {
             // Question is wrong in the pdf
             // This should be the answer
             // if (((nums[i] & nums[j])*2) < (nums[i] | nums[j])) {
-            //     cout << nums[j] << " " << nums[i] << endl;
             //     dp[i] = max(dp[i], dp[j]+1);
             // }
             //
             // But this is the preferred output
             if (nums[i] > nums[j]) {
-                cout << nums[j] << " " << nums[i] << endl;
                 dp[i] = max(dp[i], dp[j]+1);
             }
         }
